@@ -61,7 +61,6 @@ var getDate = function () {
   currentTime = date.toLocaleTimeString([], { hour: "2-digit", hour12: false });
   dateEl.textContent = currentDate;
   currentTime = parseInt(currentTime);
-  console.log(currentTime);
   return currentTime;
 };
 
@@ -105,7 +104,7 @@ var printTimeBlocks = function () {
 
     var saveButton = document.createElement("button");
     saveButton.id = "saveButton" + i;
-    saveButton.classList = "saveBtnKiddo";
+    saveButton.classList = "save-btn";
     saveButton.innerHTML =
       "<span class='glyphicon glyphicon-floppy-save'></span>";
     saveButtonSlot.appendChild(saveButton);
@@ -125,7 +124,6 @@ var printTimeBlocks = function () {
 var saveData = function () {
   for (var i = 0; i < timeSlots.length; i++) {
     eventInfo[i] = eventWritingForm[i].value;
-    console.log(eventInfo[i]);
   }
   localStorage.setItem("schedule", JSON.stringify(eventInfo));
 };
@@ -137,10 +135,7 @@ var loadSchedule = function () {
     return false;
   }
 
-  console.log("Found Saved Schedule!");
-
   savedInfo = JSON.parse(savedInfo);
-  console.log(savedInfo);
 
   //take the values of savedInfo and set the values of each eventWritingForm
   for (var i = 0; i < savedInfo.length; i++) {

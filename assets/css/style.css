@@ -41,10 +41,11 @@ textarea {
 }
 
 .event-writing-form {
+  height: 100%;
   width: 100%;
   background-color: transparent;
   border: none;
-  padding-top: 5.5px;
+
   vertical-align: text-top;
 }
 
@@ -75,12 +76,23 @@ textarea {
 }
 
 .saveBtn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   border-left: 2px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;
   margin-bottom: 1px;
+}
+
+.save-btn {
+  border: none;
+  background-color: #06aed5;
+  color: white;
+  margin-bottom: 1px;
+  max-height: 35%;
 }
 
 .saveBtn i:hover {
