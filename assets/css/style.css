@@ -33,16 +33,19 @@ textarea {
 
 .form {
   display: flex;
+  border: 1px transparent;
   width: 100%;
   margin-bottom: 1px;
-  padding: 0;
+  padding: 7.5;
+  align-items: flex-start;
 }
 
 .event-writing-form {
   width: 100%;
   background-color: transparent;
   border: none;
-  padding-left: 10px;
+  padding-top: 5.5px;
+  vertical-align: text-top;
 }
 
 .row {
