@@ -16,7 +16,7 @@ This site can be used by anyone to plan events throughout their workday.
 
 # Screenshot
 
-<img src="/assets/images/Screenshot.png" alt="Screenshot of the workday scheduler">
+<img src="/assets/images/screenshot.png" alt="Screenshot of the workday scheduler">
 
 # Questions
 
